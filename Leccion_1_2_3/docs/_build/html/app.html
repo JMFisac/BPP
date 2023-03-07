@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>app package &mdash; documentación de Actividad 3 BPP - 0.0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="app.test package" href="app.test.html" />
+    <link rel="prev" title="App Finanzas" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Actividad 3 BPP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">App Finanzas</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">app package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-app.finanzas">Finanzas.py</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#app.finanzas.ColumnsNumberError"><code class="docutils literal notranslate"><span class="pre">ColumnsNumberError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app.finanzas.dato_correcto"><code class="docutils literal notranslate"><span class="pre">dato_correcto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app.finanzas.depurarDatos"><code class="docutils literal notranslate"><span class="pre">depurarDatos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app.finanzas.leer_archivo"><code class="docutils literal notranslate"><span class="pre">leer_archivo()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#test">Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="app.test.html">app.test package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Actividad 3 BPP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">App Finanzas</a></li>
+      <li class="breadcrumb-item active">app package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/app.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="app-package">
+<h1>app package<a class="headerlink" href="#app-package" title="Enlace permanente a este encabezado"></a></h1>
+<section id="module-app.finanzas">
+<span id="finanzas-py"></span><h2>Finanzas.py<a class="headerlink" href="#module-app.finanzas" title="Enlace permanente a este encabezado"></a></h2>
+<p>Created on Tue Feb 28 00:09:56 2023</p>
+<p>&#64;author: jaime munoz fisac</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="app.finanzas.ColumnsNumberError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.finanzas.</span></span><span class="sig-name descname"><span class="pre">ColumnsNumberError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns_number</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/finanzas.html#ColumnsNumberError"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#app.finanzas.ColumnsNumberError" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Clase de excepción personalizada para
+el error de número de columnas</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.finanzas.dato_correcto">
+<span class="sig-prename descclassname"><span class="pre">app.finanzas.</span></span><span class="sig-name descname"><span class="pre">dato_correcto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dato</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/finanzas.html#dato_correcto"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#app.finanzas.dato_correcto" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Función que convierte un dato, float, int o string de un numero a float y
+maneja el error si no es numérico</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Parámetros:</dt><dd><p>dato(?): dato a tranformar
+mes(str): Mes</p>
+</dd>
+<dt>Return:</dt><dd><p>dato(float) - Dato transformado a float si es posible, si no 0</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.finanzas.depurarDatos">
+<span class="sig-prename descclassname"><span class="pre">app.finanzas.</span></span><span class="sig-name descname"><span class="pre">depurarDatos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/finanzas.html#depurarDatos"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#app.finanzas.depurarDatos" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Función que depura los datos del dataframe
+y los convierte a float</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Parámetros:</dt><dd><p>df(Dataframe): Dataframe a depurar</p>
+</dd>
+<dt>Return:</dt><dd><p>df(Dataframe): Dataframe depurado</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="app.finanzas.leer_archivo">
+<span class="sig-prename descclassname"><span class="pre">app.finanzas.</span></span><span class="sig-name descname"><span class="pre">leer_archivo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">archivo</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/finanzas.html#leer_archivo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#app.finanzas.leer_archivo" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Función que lee un archivo CSV y
+devuelve un dataframe de pandas</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Parámetros:</dt><dd><p>archivo(str): «nombre_archivo.csv»</p>
+</dd>
+<dt>Return:</dt><dd><p>df(Dataframe): dataframe con el csv descargado</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="test">
+<h2>Test<a class="headerlink" href="#test" title="Enlace permanente a este encabezado"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="app.test.html">app.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="app.test.html#module-app.test.pruebas_unittest">app.test.pruebas_unittest module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="app.test.html#app.test.pruebas_unittest.PruebasUnitarias"><code class="docutils literal notranslate"><span class="pre">PruebasUnitarias</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="app.test.html#app.test.pruebas_unittest.PruebasUnitarias.test_dato_correcto"><code class="docutils literal notranslate"><span class="pre">PruebasUnitarias.test_dato_correcto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="app.test.html#app.test.pruebas_unittest.PruebasUnitarias.test_depurar_datos"><code class="docutils literal notranslate"><span class="pre">PruebasUnitarias.test_depurar_datos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="app.test.html#app.test.pruebas_unittest.PruebasUnitarias.test_leer_archivo"><code class="docutils literal notranslate"><span class="pre">PruebasUnitarias.test_leer_archivo()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="app.test.html#module-app.test.test_actividad1">app.test.test_actividad1 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="app.test.html#app.test.test_actividad1.test_dato_correcto"><code class="docutils literal notranslate"><span class="pre">test_dato_correcto()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.test.html#app.test.test_actividad1.test_depurar_datos"><code class="docutils literal notranslate"><span class="pre">test_depurar_datos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.test.html#app.test.test_actividad1.test_leer_archivo"><code class="docutils literal notranslate"><span class="pre">test_leer_archivo()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="modules.html" class="btn btn-neutral float-left" title="App Finanzas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="app.test.html" class="btn btn-neutral float-right" title="app.test package" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, Jaime Muñoz Fisac.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

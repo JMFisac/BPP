@@ -61,6 +61,17 @@
             cosa que con pytest no me valía ya que ejecutamos pytest, desde cualquier direcorio del 
             programa y no obligados desde test.
 
+    ACTIVIDAD LECCIÓN 3
+
+        He basado la práctica de la actividad 3 en la práctica de la lección 1 y 2.
+ 
+        He realizado la documentación de dicha actividad en formato HTML
+
+        He modificado ligeramente los menús para un aspecto más legible y he añadido una imagen a modo de prueba.
+
+        Todo ello realizado con sphinx
+
+
 
 ## DATA SET:
 
